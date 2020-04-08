@@ -1,0 +1,46 @@
+.help{
+    background: #3981E5;
+    text-align: center;
+    color: #fff;
+    padding-top: 27px;
+    padding-bottom: 25px;
+
+    &__text{
+        font-size: 16px;
+        line-height: 19px;
+    }
+
+    &__button{
+        background: #212121;
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.16);
+        border-radius: 24px;
+        display: block;
+        box-sizing: border-box;
+        max-width: 310px;
+        margin: 0 auto;
+        text-align: center;
+        padding-left: 32px;
+        padding-right: 32px;
+        padding-top: 15px;
+        padding-bottom: 14px;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 19px;
+        text-align: center;
+        letter-spacing: 0.857143px;
+        text-transform: uppercase;
+        color: #fff;
+        transition: $anim;
+
+        &:hover{
+            background-color: #fff;
+            color: #212121;
+            text-decoration: none;
+        }
+
+        &:active{
+            transform: scale(0.95);
+            opacity: 0.6;
+        }
+    }
+}

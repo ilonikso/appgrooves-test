@@ -1,0 +1,14 @@
+.message{
+    background-color: #F7F7F7;
+    padding: 15px;
+    padding-bottom: 3px;
+
+    &__text{
+        font-size: 14px;
+        letter-spacing: 0.25px;
+
+        a{
+            text-decoration: underline;
+        }
+    }
+}

@@ -1,0 +1,122 @@
+.social{
+    background-color: #323232;
+
+    &__wrapper{
+        max-width: 994px;
+        margin: 0 auto;
+        padding-top: 25px;
+        padding-bottom: 6px;
+    }
+
+    &__header{
+        text-align: center;
+        font-size: 18px;
+        letter-spacing: 0.3px;
+        margin-bottom: 28px;
+    }
+
+    &__icons{
+        padding: 0;
+        margin: 0;
+        width: 260px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        list-style: none;
+
+        span{
+            font-size: 0;
+        }
+    }
+
+    &__item{
+        color: #222222;
+        font-size: 24px;
+        display: block;
+        width: 32px;
+        height: 32px;
+        background-color: #fff;
+        border-radius: 50%;
+        position: relative;
+        text-align: center;
+        transition: $anim;
+
+        &:nth-child(1){
+            font-size: 20px;
+            padding-top: 2px;
+        }
+
+        &:hover{
+            color: #222222;
+            opacity: 0.8;
+        }
+
+        &:active{
+            transform: scale(0.95);
+            opacity: 0.6;
+        }
+    }
+
+    &__nav{
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: space-between;
+        width: 430px;
+        margin: 0 auto;
+        margin-top: 20px;
+        list-style: none;
+
+        a{
+            text-decoration: none;
+            color: #fff;
+            transition: $anim;
+
+            &:hover{
+                opacity: 0.8;
+            }
+    
+            &:active{
+                display: block;
+                transform: scale(0.95);
+                opacity: 0.6;
+            }
+        }
+    }
+
+    &__banner{
+        text-align: center;
+        margin-top: 26px;
+        margin-bottom: 20px;
+    }
+
+    &__copyright{
+        display: block;
+        text-align: center;
+        font-size: 13px;
+    }
+}
+
+@media(max-width: 767.8px){
+    .social{
+        &__header{
+            margin-bottom: 18px;
+        }
+        
+        &__nav{
+            width: 100%;
+            flex-wrap: wrap;
+            justify-content: space-around;
+
+            &-item{
+                margin-bottom: 12px;
+                width: 50%;
+                text-align: center;
+            }
+        }
+
+        &__banner{
+            margin-top: 18px;
+        }
+    }
+}

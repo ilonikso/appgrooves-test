@@ -1,0 +1,31 @@
+.main{
+    max-width: 994px;
+    margin: 0 auto;
+
+    &--menu-active{
+
+        &::after{
+            display: block;
+            content: '';
+            width: 100vw;
+            height: 100vh;
+            position: fixed;
+            z-index: 10;
+            background-color: rgba(#000, 0.3);
+            position: absolute;
+            top: 52px;
+            left: 0;
+            animation: .1s backgroundShow ease;
+        }
+    }
+}
+
+@keyframes backgroundShow {
+    from{
+        opacity: 0;
+    }
+
+    to{
+        opacity: 1;
+    }
+}

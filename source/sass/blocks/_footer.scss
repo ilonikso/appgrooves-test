@@ -1,0 +1,117 @@
+.footer{
+    background: #2B2B2B;
+    color: #fff;
+
+    .row{
+        margin-left: -30px;
+        margin-right: -30px;
+    }
+    
+    a{
+        text-decoration: underline;
+    }
+    
+    &__wrapper{
+        max-width: 994px;
+        max-width: 900px;
+        margin: 0 auto;
+        padding-top: 25px;
+        padding-bottom: 40px;
+        position: relative;
+        left: -47px;
+    }
+
+    &__header{
+        font-size: 22px;
+    }
+
+    &__text{
+       
+        a{
+            color: #fff;
+        }
+    }
+
+    &__list{
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        
+        &--double{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: repeat(17, 40px);
+            grid-auto-flow: column;
+        }
+    }
+
+    &__list-header{
+        font-size: 22px;
+        line-height: 26px;
+        font-weight: bold;
+        margin-top: 8px;
+        margin-bottom: 18px;
+    }
+
+    &__list-item{
+        padding-top: 8.5px;
+        padding-bottom: 8px;
+        display: block;
+        width: 100%;
+        transition: $anim;
+
+        &:hover{
+            opacity: 0.8;
+        }
+
+        &:active{
+            transform: scale(0.98);
+        }
+
+        a{
+            text-decoration: none;
+            color: #fff;
+        }
+    }
+
+}
+
+@media(max-width: 1023.8px){
+    .footer{
+        &__wrapper{
+            position: static;
+            padding-left: 15px;
+            padding-right: 15px;
+            width: 100%;
+        }
+    }
+}
+
+@media(max-width: 767.8px){
+    .footer{
+        
+        &__wrapper{
+            padding-bottom: 20px;
+        }
+
+        &__text{
+            margin-bottom: 10px;
+        }
+
+        &__list{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: repeat(9, 40px);
+            grid-auto-flow: column;
+            margin-bottom: 20px;
+
+            &--double{
+                grid-template-rows: repeat(14, 40px);
+            }
+        }
+
+        .row:nth-child(2){
+            margin-top: 20px;
+        }
+    }
+}

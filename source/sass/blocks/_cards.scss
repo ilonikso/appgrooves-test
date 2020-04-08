@@ -1,0 +1,137 @@
+.cards{
+    background-color: #fff;
+    padding-top: 16px;
+    
+    &__header{
+        margin-top: 0;
+        font-weight: 500;
+        font-size: 22px;
+        line-height: 26px;
+        color: #3981E5;
+        padding-left: 15px;
+        padding-right: 15px;
+        font-size: 14px;
+        margin-bottom: 20px;
+
+        span{
+            font-size: 22px;
+        }
+
+        svg{
+            position: relative;
+            top: -2px;
+            left: 5px;
+        }
+    }
+
+    &__item{
+        padding-bottom: 10px;
+        margin-bottom: 17px;
+    }
+
+    &__pic{
+        position: relative;
+        min-height: 168px;
+        overflow: hidden;
+        border-radius: 6px;
+
+        img{
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            margin: auto;
+        }
+    }
+
+    &__title{
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 25px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        display: inline-block;
+    }
+
+    &__text{
+        font-size: 14px;
+        line-height: 22px;
+        letter-spacing: 0.175px;
+    }
+
+    &__stats{
+        margin-top: -12px;
+    }
+
+    &__more{
+        display: inline-block;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 23px;
+        letter-spacing: 0.3px;
+        text-transform: uppercase;
+        color: #3981E5;
+        transition: $anim;
+        padding: 10px;
+        border-radius: 4px;
+        text-align: center;
+        width: 100%;
+        margin-top: -10px;
+        margin-bottom: 23px;
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.16);
+        border: 1px solid #DDDDDD;
+
+        &:hover{
+            background-color: #3981E5;
+            color: #fff;
+            text-decoration: none;
+        }
+
+        &:active{
+            transform: scale(0.95);
+            opacity: 0.6;
+        }
+    }
+}
+
+@media(max-width: 767.8px){
+    .cards{
+        &__item{
+            margin-bottom: 2px;
+        }
+
+        &__title{
+            font-size: 16px;
+            line-height: 23px;
+            letter-spacing: 0.266667px;
+            margin-bottom: 18px;
+        }
+
+        &__pic{
+            min-height: 135px;
+
+            img{
+                height: 100%;
+                width: auto;
+                max-width: unset;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+        }
+
+        &__text{
+            display: none;
+        }
+
+        &__stats{
+            span:nth-child(2){
+                display: none;
+            }
+        }
+
+        &__more{
+            margin-top: 0px;
+        }
+    }
+}
